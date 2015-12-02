@@ -1,0 +1,30 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+  <display-name>EmailQuestionnaire</display-name>
+
+    <context-param>
+        <param-name>pathToQuestionnaires</param-name>
+        <param-value>webapps/tmp/EmailQuestionnairesOutput</param-value>
+    </context-param>
+    <context-param>
+        <param-name>trashDir</param-name>
+        <param-value>webapps/tmp/EmailQuestionnairesOutput/trash</param-value>
+    </context-param>
+
+    <listener>
+        <listener-class>net.hoplahup.emailquestionnaire.QuestionnaireWebApp</listener-class>
+    </listener>
+    <servlet>
+        <servlet-name>ReceiveQuestionnaireResult</servlet-name>
+        <servlet-class>net.hoplahup.emailquestionnaire.ReceiveQuestionnaireResult</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>ReceiveQuestionnaireResult</servlet-name>
+        <url-pattern>/receive/*</url-pattern>
+    </servlet-mapping>
+
+</web-app>
