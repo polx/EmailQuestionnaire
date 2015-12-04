@@ -8,7 +8,7 @@ For you to apply these tools, you shall need a servlet container such as [Apache
 
 The project's documentation includes the following documents to get you started:
 * [How to install?](docs/How-to-install.md) A description of the technical steps to install and configure the survey and results web-application, including write-rights.
-* [How to create an email-questionnaire?](docs/How-to-create-an-email-questionnaire.md) A description of the typical steps to create the HTML and use it in a mail that you can send to the persons being polled.
+* [How to create an email-questionnaire?](docs/How-to-create-an-email-questionnaire.md) A description of the typical steps to create the HTML and use it in a mail that you can send to the persons being polled. Please note the [supported email clients](docs/ Which-email-programmes-work.md).
 * [How to process results?](docs/How-to-process-results.md) A workflow description to ensure a swift and live analysis of the questionnaire results.
 
 Wishing to contribute? To make remarks? 
